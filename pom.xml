@@ -33,6 +33,7 @@
 		<nacos-config-spring-boot.version>0.2.12</nacos-config-spring-boot.version>
 		<hutool.version>5.8.16</hutool.version>
 		<redis.version>2.6.3</redis.version>
+		<lombok.version>1.18.22</lombok.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -56,6 +57,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>

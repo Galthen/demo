@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import cn.hutool.core.lang.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,7 +23,11 @@ public class RedisTest {
     public void test() {
         ValueOperations<String, Object> ops = redisTemplate.opsForValue();
         ops.set("myName", "chenyang");
+
         System.out.println(ops.get("myName"));
+        Assert.equals("chenyang", ops.get("myName"));
+
+        ops.getOperations().delete("myName");
     }
 
 }
