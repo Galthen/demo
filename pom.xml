@@ -31,6 +31,7 @@
 		<mysql.version>8.0.33</mysql.version>
 		<mybatis.version>2.3.2</mybatis.version>
 		<nacos-config-spring-boot.version>0.2.12</nacos-config-spring-boot.version>
+		<hutool.version>5.8.16</hutool.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -81,6 +82,11 @@
 			<groupId>com.alibaba.boot</groupId>
 			<artifactId>nacos-discovery-spring-boot-starter</artifactId>
 			<version>${nacos-config-spring-boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>${hutool.version}</version>
 		</dependency>
 	</dependencies>
 
