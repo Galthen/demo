@@ -1,7 +1,7 @@
 spring:
   application:
     name:
-      demo
+      example
 
   # DataSource Config
   datasource:
@@ -13,3 +13,7 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
