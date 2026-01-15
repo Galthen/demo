@@ -18,6 +18,13 @@ public class BitwiseOperationTest {
 
     @Test
     public void test() {
+        class CollisionKey {
+            @Override
+            public int hashCode() {
+                return 1;
+            }
+        }
+
         // 初始没有任何权限
         int userAuth = 0;
 
