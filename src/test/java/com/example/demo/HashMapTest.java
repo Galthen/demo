@@ -21,6 +21,5 @@ public class HashMapTest {
             map.put(new CollisionKey(), "val" + i);
         }
 
-        map.get("ALLOW_DELETE");
     }
 }
