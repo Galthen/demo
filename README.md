@@ -5,4 +5,4 @@
 
 - lab: 实验测试
 - mybaits: mybatis-plus
-- sse: 使用 DeepSeek 接口验证，包装结果轻量服务器推送
+- sse: Flux 和 SseEmitter 分别模拟实现，Flux 方式对接 DeepSeek 真实模拟
