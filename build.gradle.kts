@@ -21,6 +21,8 @@ subprojects {
 
     dependencies {
         implementation("org.springframework.boot:spring-boot-starter")
+        compileOnly("org.projectlombok:lombok")
+        annotationProcessor("org.projectlombok:lombok")
         testRuntimeOnly("org.junit.platform:junit-platform-launcher")
         testImplementation("org.springframework.boot:spring-boot-starter-test")
     }
