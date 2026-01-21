@@ -1,5 +1,16 @@
 spring:
   application:
     name: sse
+  ai:
+    deepseek:
+      api-key: sk-96bc030bbbb64dbfb96b7934719dfab4
+      base-url: https://api.deepseek.com
+      chat:
+        enabled: true
+        base-url: https://api.deepseek.com
+        options:
+          model: deepseek-chat
+          temperature: 0.7
+
 server:
   port: 7003
