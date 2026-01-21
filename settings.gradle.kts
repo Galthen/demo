@@ -2,7 +2,7 @@
 
 rootProject.name = "demo"
 
-include("lab", "mybaits", "sse", "redis")
+include("lab", "mybaits", "sse", "redis", "nacos")
 
 pluginManagement {
     repositories {

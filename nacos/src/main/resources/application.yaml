@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: nacos
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        group: DEFAULT_GROUP
+        service: ${spring.application.name}
+
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        group: DEFAULT_GROUP
+        file-extension: yaml
+        refresh-enabled: true
+  config:
+    import:
+      - nacos:${spring.application.name}-${spring.profiles.active}.yaml
+server:
+  port: 7005
