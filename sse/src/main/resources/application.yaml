@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: sse
+server:
+  port: 7003
